@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/*"
+]
+
+[workspace.dependencies]
+model = { path = "crates/model" }
+engine = { path = "crates/engine" }
+theme = { path = "crates/theme" }
+ui = { path = "crates/ui" }
+gpui = { version = "*" }
+unicode-segmentation = "1.13.2"
+uuid = "1.23.2"
